@@ -1,14 +1,5 @@
 ﻿Running the test:
-1. Self test mode. 
-    Prerequisites:
-    * Python 2.7
-    * Running MQTT broker on the localhost, port 1883
-    
-        python test.py
-    
-    The result should be OK
-
-2. Test the esp8266-evb
+1. Test the esp8266-evb
     Prerequisites:
     * Python 2.7
     * Running MQTT broker
@@ -20,7 +11,7 @@
     
     The result should be OK
     
-3. Do extensive test
+2. Do extensive test
    Execute in the bash:
    
     while [ 1 == 1 ]

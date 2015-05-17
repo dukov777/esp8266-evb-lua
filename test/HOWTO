@@ -1,0 +1,30 @@
+﻿Running the test:
+1. Self test mode. 
+    Prerequisites:
+    * Python 2.7
+    * Running MQTT broker on the localhost, port 1883
+    
+        python test.py
+    
+    The result should be OK
+
+2. Test the esp8266-evb
+    Prerequisites:
+    * Python 2.7
+    * Running MQTT broker
+
+        export MQTT_RELAY=<relay topic>
+        export MQTT_SENSOR=<sensor topic>
+        export CLOUDMQTT_URL='mqtt://<user>:<pass>@<server>:<port>'
+        python test.py
+    
+    The result should be OK
+    
+3. Do extensive test
+   Execute in the bash:
+   
+    while [ 1 == 1 ]
+    do
+    python test.py
+    sleep 1m
+    done    
